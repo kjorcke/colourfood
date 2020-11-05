@@ -1,0 +1,21 @@
+/* ----- In :root you can define global variables */
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* VARIABLES */
+
+  --red: red;
+  --orange: orange;
+  --yellow: yellow;
+  --green: green;
+  --blue: blue;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
