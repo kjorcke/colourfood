@@ -4,21 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>colourfood</title>
+    <link rel="stylesheet" href="styleshomepage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-
+        <header> 
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./src/colorfoodLogo.JPG" alt="foodlogo">
+                </div>
+                <li class="search-icon">
+                    <input type="search" placeholder="Search">
+                    <span class="fas fa-search"></span>
+                </li>
+                <ul>
+                    <li><a class="navyellow" href="#">yellow</a></li>
+                    <li><a class="navpurple" href="#">purple</a></li>
+                    <li><a class="navbrown" href="#">brown</a></li>
+                    <li><a class="navred" href="#">red</a></li>
+                    <li><a class="navwhite" href="#">white</a></li>
+                    <li><a class="navgreen" href="#">green</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div><!--Burger-->
+            </nav>
+           
     </header>
-<!---------------------------   ---->
-    <main>
 
+    
+
+
+
+<!---------------------------------->
+    <main>
+        <!--images by color-->
+        <div class="main-container">
+            <div class="categories-container">
+                <div class="titel">
+                    <h1 class="blog-title">Colorfood</h1>
+                </div>
+            
+                <div class="gridContainer">
+    
+                    <a class="image-container magic-1" href="yellowFoodPage">
+                        <div class="image">
+                            <img src="./src/img/yellow-lemons-square.jpg" alt="lemons">
+                        </div>    
+                        <h2 class="text">yellow</h2>
+                    </a>
+                    
+                    <a class="image-container magic-2" href="purpleFoodPage">
+                        <div class="image">
+                            <img src="./src/img/purple - eggplant 1.jpg" alt="eggplants">
+                        </div>
+                        <h2 class="text">purple</h2>
+                    </a>
+
+                    <a class="image-container magic-3" href="brownFoodPage">
+                        <div class="image">
+                            <img src="./src/img/brown - coffee beans.jpg" alt="coffeeBeans">
+                        </div>
+                        <h2 class="text">brown</h2>
+                    </a>
+
+                    <a class="image-container magic-4" href="redFoodPage">
+                        <div class="image">
+                            <img src="./src/img/red-raspberries-square.jpg" alt="raspberries">
+                        </div>
+                        <h2 class="text">red</h2>
+                    </a>
+
+                    <a class="image-container magic-5" href="whiteFoodPage">
+                        <div class="image">
+                            <img src="./src/img/white pastinaken.jpg" alt="parsnips">
+                        </div>
+                        <h2 class="text">white</h2>
+                    </a>    
+
+                    <a class="image-container magic-6" href="greenFoodPage">
+                        <div class="image">
+                            <img src="./src/img/green - peppers.jpg" alt="greenPeppers">
+                        </div>
+                        <h2 class="text">green</h2>
+                    </a>
+                </div> <!--Grid Container-->
+
+                    <div class="titel">
+                        <h1 class="blog-title">get filled with colors</h1>
+                    </div><!--titel-->
+
+            </div> <!-- categories container-->
+            <div class="mansory-container">
+                
+            </div>
+        </div><!--Main Container-->      
+        
     </main>
 
-<!------------------------------->
+<!--
     <footer>
-
+        <div></div>
     </footer>
-<!--------------------------------->
+-->
 </body>
 </html>
