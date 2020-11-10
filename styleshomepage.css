@@ -45,24 +45,61 @@ nav .logo{
 nav .logo h2{
 
 }
+/*SEARCHBOX*/
+/*
 .search-icon{
     list-style: none;
     height: 60px;
     width: 250px;
-    /*background-color: lightpink;*/
+    /*background-color: lightpink;
     display: flex;
     align-items: center;
 }
 .search-icon input{
     width: 250px;
     height: 40px;
-}
+}*/
+
+
+/*SEARCHBOX END*/
 
 nav ul{
     display: flex;
     justify-content: space-around;
     width:25%;
     }
+@media screen and (max-width: 1024px){
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        width:35%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+        }
+    nav ul{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 80px;
+        background-color: lightpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    nav ul li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
 
 nav ul li{
     list-style: none;
@@ -125,6 +162,7 @@ nav ul li .navgreen:hover {
 .burger{
     display: none;
 }
+
 .burger div{
     width: 25px;
     height: 3px;
