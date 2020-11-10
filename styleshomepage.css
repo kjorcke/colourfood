@@ -46,20 +46,19 @@ nav .logo h2{
 
 }
 /*SEARCHBOX*/
-/*
+
 .search-icon{
     list-style: none;
     height: 60px;
     width: 250px;
-    /*background-color: lightpink;
+    /*background-color: lightpink;*/
     display: flex;
     align-items: center;
 }
 .search-icon input{
     width: 250px;
     height: 40px;
-}*/
-
+}
 
 /*SEARCHBOX END*/
 
