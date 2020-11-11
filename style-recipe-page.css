@@ -32,25 +32,25 @@ h2 {
   font-family: var(--title-font);
 }
 
-h3 {
+/* h3 {
   position: relative;
 }
 
 h3 span {
   background-color: white;
   padding-right: 10px;
-}
+} */
 
-h3:after {
+/* h3:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   height: 0.75rem;
-  border-top: 2px solid grey;
+  border-top: 2px solid lightgrey;
   z-index: -1;
-}
+} */
 
 .column {
   display: flex;
@@ -109,7 +109,7 @@ h3:after {
 
 .share-btn {
   margin-left: 1rem;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
   border-radius: 4px;
   background-color: var(--red);
 
@@ -170,20 +170,21 @@ i.fa-share-alt:hover {
   margin: 2rem;
   padding: 2rem;
   top: 2rem;
-  border: 1px solid lightgray;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  box-shadow: 8px 8px 8px lightgray;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .ingredients-content table {
   table-layout: auto;
   width: 100%;
-  border-spacing: 0.5rem;
+  border-spacing: 0.5rem 0;
 }
 
 .ingredients-content td {
   padding: 0.5rem;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .quantity {
