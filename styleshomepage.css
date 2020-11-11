@@ -83,7 +83,7 @@ nav ul{
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 30px;
+        top: 20px;
         background-color: lightpink;
         display: flex;
         flex-direction: column;
