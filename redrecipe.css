@@ -8,6 +8,8 @@
 .banner {
   position: relative;
   height: 600px;
+  top: 100px;
+  margin-bottom: 140px;
 }
 
 .banner img {
@@ -32,7 +34,7 @@
   height: 100%;
   background-color: black;
   float: left;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: bold;
   font-size: large;
   color:white;
@@ -105,7 +107,7 @@ h1 {
   font-size: 1em;
   /*opacity: 0;*/
   background-color: white;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: bold;
   font-size: large;
 }
