@@ -42,8 +42,9 @@ nav .logo{
     /*background-color: lightpink;*/
     width: 30%;
 }
-nav .logo h2{
-
+nav .logolink{
+    text-decoration: none;
+    color: black;
 }
 /*SEARCHBOX*/
 
@@ -168,8 +169,6 @@ nav ul li .navgreen:hover {
     background-color: black;
     margin: 5px;
 }
-
-
 
 
 /*CATEGORIES CONTAINER*/
