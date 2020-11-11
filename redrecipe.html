@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ColorFood</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./redrecipe.css">
+    <link rel="stylesheet" type="text/css" href="./styleshomepage.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('nav-effect');
+            }
+            else 
+            {
+                $('nav').removeClass('nav-effect');
+            }
+        })
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./src/cocktailIcon.png" alt="foodlogo">
+                <h2>colorfood</h2>
+            </div>
+            <!--
+                 <li class="search-icon">
+                <input type="search" placeholder="Search">
+                <span class="fas fa-search"></span>
+            </li>
+            -->
+           
+            <ul>
+                <li><a class="navyellow" href="#">yellow</a></li>
+                <li><a class="navpurple" href="#">purple</a></li>
+                <li><a class="navbrown" href="#">brown</a></li>
+                <li><a class="navred" href="./redrecipe.html">red</a></li>
+                <li><a class="navwhite" href="#">white</a></li>
+                <li><a class="navgreen" href="#">green</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div><!--Burger-->
+        </nav>
+
+    </header>
+
+    <div class="banner">
+          <img src="./assets/raspberry-custard-cake.jpg"/>
+            <div class='recipeofthedaydesc' >
+                    <div class="recipeofthedaybanner">
+                         <p>Recipe of the Day</p>
+                    </div>
+                    <div class="recipeoftheday">
+                         <p>Check out this easy traybake recipe with sweet raspberries and creamy custard, a perfect teatime treat. Long-life custard is a bit more stable and usually thicker than fresh, so it's good for baking into cakes.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Red Colored Recipes</h1>
+
+    <div class= "masonry">
+
+        <div class="container">
+            <img src="./assets/rhubarbcake.jpg" />
+            <div class="recipedescription hide">Rhubarb Cake</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/beet-tagliatelle-with-walnuts.jpg" />
+            <div class="recipedescription hide">Beet Tagliatelle</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/Turkish-Delight-Recipe.jpg" />
+            <div class="recipedescription hide">Turkish Delight</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/cauliflower-pizza.jpg" />
+            <div class="recipedescription hide">Couliflower Pizaa</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/cinnamon-baked-apples.jpg" />
+            <div class="recipedescription hide">Cinnamon Baked Apples</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/ice-cream.jpg" />
+            <div class="recipedescription hide">Ice Cream</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/beetpancake.jpg" />
+            <div class="recipedescription hide">Beet Pancake</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/Mulled-wine.jpg" />
+            <div class="recipedescription hide">Mulled Wine</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/lentilsoup.jpg" />
+            <div class="recipedescription hide">Lentil Soup</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/Strawberry-Gazpacho.jpg" />
+            <div class="recipedescription hide">Strawberry Gazpacho</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/Red-Borscht-Recipe.jpg" />
+            <div class="recipedescription hide">Borscht Soup</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/muammara.jpg" />
+            <div class="recipedescription hide">Muhammara</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/Vegan-Burger.jpg" />
+            <div class="recipedescription hide">Vegan Burger</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+        <div class="container">
+            <img src="./assets/pear.jpg" />
+            <div class="recipedescription hide">Red Pears</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div> 
+        <div class="container">
+            <img src="./assets/watermelon.jpg" />
+            <div class="recipedescription hide">Watermelon</div>
+            <a href="https://www.pinterest.com/" class="pinterest hide"><img src="assets/pinterest-social-logo-pngrepo-com.png"></a> 
+        </div>
+
+      </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
