@@ -4,11 +4,52 @@
     <title>ColorFood</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="./redrecipe.css">
+    <link rel="stylesheet" type="text/css" href="./styleshomepage.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('nav-effect');
+            }
+            else 
+            {
+                $('nav').removeClass('nav-effect');
+            }
+        })
+    </script>
   </head>
 
   <body>
 
-    <header></header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./src/cocktailIcon.png" alt="foodlogo">
+                <h2>colorfood</h2>
+            </div>
+            <!--
+                 <li class="search-icon">
+                <input type="search" placeholder="Search">
+                <span class="fas fa-search"></span>
+            </li>
+            -->
+           
+            <ul>
+                <li><a class="navyellow" href="#">yellow</a></li>
+                <li><a class="navpurple" href="#">purple</a></li>
+                <li><a class="navbrown" href="#">brown</a></li>
+                <li><a class="navred" href="./redrecipe.html">red</a></li>
+                <li><a class="navwhite" href="#">white</a></li>
+                <li><a class="navgreen" href="#">green</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div><!--Burger-->
+        </nav>
+
+    </header>
 
     <div class="banner">
           <img src="./assets/raspberry-custard-cake.jpg"/>

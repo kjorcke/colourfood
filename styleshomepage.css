@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
@@ -216,6 +217,7 @@ nav ul li .navgreen:hover {
     }
 .image-container:hover{
     opacity: 0.5;
+    transition: .35s ease;
 }    
 
 .image-container .image{
@@ -232,6 +234,7 @@ nav ul li .navgreen:hover {
 
 .imgage-container:hover img{
     opacity: 0.5;
+    transition: .35s ease;
 }
 
 .text{
@@ -296,5 +299,18 @@ nav ul li .navgreen:hover {
 }
 
 @media (max-width: 576px) {
+
+}
+
+footer div {
+    height:80px;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 
 }
