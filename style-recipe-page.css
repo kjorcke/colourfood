@@ -6,12 +6,14 @@
 
   /* VARIABLES */
 
-  --red: red;
-  --orange: orange;
+  --red: #db1f1f;
+  --orange: #f3722c;
   --yellow: #fad73c;
-  --green: green;
-  --purple: purple;
-  --title-font: "Times New Roman", Times, serif;
+  --white: #fffff0;
+  --light-green: #96c771;
+  --green: #358754;
+  --purple: #794482;
+  --title-font: "Noto Serif", serif;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
 h1 {
   margin-top: 0;
   font-family: var(--title-font);
+  font-weight: 400;
   line-height: 3.5rem;
   font-size: 2.5rem;
 }
@@ -30,27 +33,8 @@ h2 {
   margin: 0 auto 2rem auto;
   text-align: center;
   font-family: var(--title-font);
+  font-weight: 400;
 }
-
-/* h3 {
-  position: relative;
-}
-
-h3 span {
-  background-color: white;
-  padding-right: 10px;
-} */
-
-/* h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.75rem;
-  border-top: 2px solid lightgrey;
-  z-index: -1;
-} */
 
 .column {
   display: flex;
@@ -61,6 +45,16 @@ h3 span {
 /* general padding for the columns */
 .gnrl-padding {
   padding: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar li {
+    display: none;
+  }
+
+  .search-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -75,6 +69,225 @@ h3 span {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 16vh;
+  background: white;
+}
+
+.logo {
+  position: absolute;
+  padding-left: 2rem;
+}
+
+.logo a {
+  font-family: "BioRhyme", serif;
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+
+  /* background: linear-gradient(
+    to right,
+    var(--red) 0%,
+    var(--orange) 16%,
+    var(--yellow) 32%,
+    var(--green) 64%,
+    var(--purple) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.search-container {
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding-left: 8px;
+}
+
+.search-container ul {
+  margin: 0;
+  padding: 4px;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 0 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.separator {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    hsla(0, 75%, 49%, 1) 0%,
+    hsla(21, 89%, 56%, 1) 16%,
+    hsla(49, 95%, 61%, 1) 32%,
+    hsla(94, 43%, 61%, 1) 40%,
+    hsla(143, 44%, 37%, 1) 56%,
+    hsla(291, 31%, 39%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    to right,
+    hsla(0, 75%, 49%, 1) 0%,
+    hsla(21, 89%, 56%, 1) 16%,
+    hsla(49, 95%, 61%, 1) 32%,
+    hsla(94, 43%, 61%, 1) 40%,
+    hsla(143, 44%, 37%, 1) 56%,
+    hsla(291, 31%, 39%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    to right,
+    hsla(0, 75%, 49%, 1) 0%,
+    hsla(21, 89%, 56%, 1) 16%,
+    hsla(49, 95%, 61%, 1) 32%,
+    hsla(94, 43%, 61%, 1) 40%,
+    hsla(143, 44%, 37%, 1) 56%,
+    hsla(291, 31%, 39%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#db1f1f", endColorstr="#f3722c", GradientType=1 );
+}
+
+/* CHECKBOXES */
+
+.round {
+  position: relative;
+}
+
+.round label {
+  border: 3px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: -4px;
+  width: 24px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  border-color: lightgray;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 0;
+}
+
+.red.round label {
+  background-color: var(--red);
+}
+
+.orange.round label {
+  background-color: var(--orange);
+}
+
+.yellow.round label {
+  background-color: var(--yellow);
+}
+
+.white.round label {
+  background-color: var(--white);
+}
+
+.lightgreen.round label {
+  background-color: var(--light-green);
+}
+
+.green.round label {
+  background-color: var(--green);
+}
+
+.purple.round label {
+  background-color: var(--purple);
+}
+
+.red.round input[type="checkbox"]:checked + label {
+  background-color: var(--red);
+}
+
+.orange.round input[type="checkbox"]:checked + label {
+  background-color: var(--orange);
+}
+
+.yellow.round input[type="checkbox"]:checked + label {
+  background-color: var(--yellow);
+}
+
+.white.round input[type="checkbox"]:checked + label {
+  background-color: var(--white);
+}
+
+.lightgreen.round input[type="checkbox"]:checked + label {
+  background-color: var(--light-green);
+}
+
+.green.round input[type="checkbox"]:checked + label {
+  background-color: var(--green);
+}
+
+.purple.round input[type="checkbox"]:checked + label {
+  background-color: purple;
+}
+
+/* SEARCH FORM */
+
+.form-container {
+  /* border-radius: 8px; */
+  padding: 8px;
+  /* margin-left: 1rem; */
+  width: 100%;
+  margin: 0 0 0 1rem;
+}
+
+.search-form {
+  width:100%
+  border:1px solid white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-btn {
+  position: relative;
+  top: 3px;
+  right: 24px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  float: right;
+}
+
+.fa-search {
+  color: black;
+}
+
+.hamburguer {
+  position: absolute;
+  float: right;
+  right: 32px;
+  /* margin-left: auto; */
+}
+
+.fa-bars {
+  color: black;
+  font-size: 32px;
 }
 
 /* HEADER */
@@ -120,7 +333,7 @@ h3 span {
 }
 
 .share-btn:hover {
-  background-color: var(--green);
+  background-color: var(--red);
 }
 
 i.fa-share-alt:hover {
@@ -128,7 +341,7 @@ i.fa-share-alt:hover {
 }
 
 .rcp-description {
-  padding: 54px 0;
+  padding: 40px 0;
 }
 
 .p-infos-wrapper {
