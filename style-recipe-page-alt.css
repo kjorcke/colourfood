@@ -73,7 +73,7 @@ h2 {
 
 /* NAVBAR */
 
-/* .navbar {
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -93,7 +93,7 @@ h2 {
   font-size: 40px;
   font-weight: 800;
   text-decoration: none;
-  color: black; */
+  color: black;
 
   /* background: linear-gradient(
     to right,
@@ -107,7 +107,7 @@ h2 {
   -webkit-text-fill-color: transparent; */
 }
 
-/* .search-container {
+.search-container {
   margin: auto;
   border: 2px solid rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -160,11 +160,11 @@ h2 {
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#db1f1f", endColorstr="#f3722c", GradientType=1 );
-} */
+}
 
 /* CHECKBOXES */
 
-/* .round {
+.round {
   position: relative;
 }
 
@@ -245,11 +245,11 @@ h2 {
 
 .purple.round input[type="checkbox"]:checked + label {
   background-color: purple;
-} */
+}
 
 /* SEARCH FORM */
 
-/* .form-container {
+.form-container {
   padding: 8px;
   width: 240px;
   display: flex;
@@ -286,7 +286,7 @@ h2 {
 .fa-bars {
   color: black;
   font-size: 32px;
-} */
+}
 
 /* HEADER */
 

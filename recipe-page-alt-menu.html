@@ -20,9 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style-recipe-page.css" />
-    <link rel="stylesheet" href="kathleen-navbar-style.css" />
+    <link rel="stylesheet" href="style-recipe-page-alt.css" />
 
     <title>Colourfood Recipe</title>
   </head>
@@ -30,25 +28,97 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="./images/cocktailIcon.png" alt="foodlogo" />
-          <a class="logolink" href="index.html">Colorfood</a>
+          <a class="logo-link" href="index.html">Colourfood </a>
         </div>
-        <div class="menu-items">
+
+        <div class="search-container">
           <ul>
             <li>
-              <a class="navyellow" href="./yellowrecipies.html">yellow</a>
+              <div class="round red">
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1"></label>
+              </div>
             </li>
+
             <li>
-              <a class="navpurple" href="./purplerecipies.html">purple</a>
+              <div class="round orange">
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2"></label>
+              </div>
             </li>
-            <li><a class="navbrown" href="./brownrecipies.html">brown</a></li>
-            <li><a class="navred" href="./redrecipe.html">red</a></li>
-            <li><a class="navwhite" href="./whiterecipies.html">white</a></li>
-            <li><a class="navgreen" href="./greenrecipies.html">green</a></li>
-            <span class="hamburguer">
-              <i class="fas fa-bars"></i>
-            </span>
+
+            <li>
+              <div class="round yellow">
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3"></label>
+              </div>
+            </li>
+
+            <li>
+              <div class="round white">
+                <input type="checkbox" id="checkbox4" />
+                <label for="checkbox4"></label>
+              </div>
+            </li>
+
+            <li>
+              <div class="round lightgreen">
+                <input type="checkbox" id="checkbox5" />
+                <label for="checkbox5"></label>
+              </div>
+            </li>
+
+            <li>
+              <div class="round green">
+                <input type="checkbox" id="checkbox6" />
+                <label for="checkbox6"></label>
+              </div>
+            </li>
+
+            <li>
+              <div class="round purple">
+                <input type="checkbox" id="checkbox7" />
+                <label for="checkbox7"></label>
+              </div>
+            </li>
+
+            <li>
+              <div class="form-container">
+                <form
+                  id="search-form"
+                  class="form-inline"
+                  role="form"
+                  method="post"
+                  action="//www.google.com/search"
+                  target="_blank"
+                >
+                  <div class="input-group">
+                    <input
+                      id="search-input"
+                      type="text"
+                      class="form-control search-form"
+                      placeholder="Search"
+                    />
+
+                    <span class="input-group-btn">
+                      <button
+                        type="submit"
+                        class="btn btn-primary search-btn"
+                        data-target="#search-form"
+                        name="q"
+                      >
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </li>
           </ul>
+        </div>
+
+        <div class="hamburguer">
+          <i class="fas fa-bars"></i>
         </div>
       </nav>
     </header>
@@ -56,7 +126,7 @@
     <!-- ------------------- -->
 
     <main>
-      <!-- <div class="separator"></div> -->
+      <div class="separator"></div>
 
       <div class="rcp-summary">
         <!-- HEADER IMAGE COLUMN -->
