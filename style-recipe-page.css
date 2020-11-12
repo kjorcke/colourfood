@@ -47,7 +47,7 @@ h2 {
   padding: 4rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .navbar li {
     display: none;
   }
@@ -250,16 +250,16 @@ h2 {
 /* SEARCH FORM */
 
 .form-container {
-  /* border-radius: 8px; */
   padding: 8px;
-  /* margin-left: 1rem; */
-  width: 100%;
-  margin: 0 0 0 1rem;
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
 }
 
-.search-form {
-  width:100%
-  border:1px solid white;
+#search-input {
+  border: none;
+  width: 204px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -267,7 +267,6 @@ h2 {
 .search-btn {
   position: relative;
   top: 3px;
-  right: 24px;
   border: none;
   background-color: white;
   cursor: pointer;
@@ -282,7 +281,6 @@ h2 {
   position: absolute;
   float: right;
   right: 32px;
-  /* margin-left: auto; */
 }
 
 .fa-bars {
