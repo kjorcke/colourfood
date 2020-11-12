@@ -1,0 +1,131 @@
+@media screen and (max-width: 1024px) {
+  .hamburguer {
+    position: absolute;
+    float: right;
+    right: 32px;
+    top: 38px;
+    font-size: 24px;
+  }
+
+  nav ul li {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburguer {
+    display: none;
+  }
+}
+
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+
+  /* VARIABLES */
+
+  --red: #db1f1f;
+  --orange: #f3722c;
+  --yellow: #fad73c;
+  --white: #fffff0;
+  --light-green: #96c771;
+  --green: #358754;
+  --purple: #794482;
+  --title-font: "Noto Serif", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 94%;
+  height: 96px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding: 0 48px 0 48px;
+  z-index: 1000;
+  border-bottom: 1px solid pink;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar img {
+  width: 60px;
+  height: 60px;
+}
+
+nav .logolink {
+  font-family: "BioRhyme", serif;
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-items {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0 !important;
+}
+
+nav ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li .navyellow:hover {
+  background-color: #ff9505ff;
+}
+
+nav ul li .navpurple:hover {
+  background-color: #643a71ff;
+}
+nav ul li .navbrown:hover {
+  background-color: #895737ff;
+}
+
+nav ul li .navred:hover {
+  background-color: #ef798aff;
+}
+nav ul li .navwhite:hover {
+  background-color: #f4f1deff;
+}
+nav ul li .navgreen:hover {
+  background-color: #1c7c54ff;
+}
+
+.rcp-image {
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-image: url("images/rapsberry.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
