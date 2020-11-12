@@ -291,12 +291,12 @@ nav ul li .navgreen:hover {
    
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 992px){
   
     .gridContainer {
         display: grid;
-        grid-template-columns: repeat(15, 40px);
-        grid-template-rows: repeat(10, 40px);
+        grid-template-columns: repeat(14, 40px);
+        grid-template-rows: repeat(9, 40px);
         width: 80%;
         background-color: white;
         justify-content: center;
@@ -334,11 +334,11 @@ nav ul li .navgreen:hover {
 
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
     .gridContainer {
         display: grid;
-        grid-template-columns: repeat(10, 40px);
-        grid-template-rows: repeat(15, 40px);
+        grid-template-columns: repeat(9, 40px);
+        grid-template-rows: repeat(14, 40px);
         width: 80%;
         background-color: white;
         justify-content: center;
@@ -376,11 +376,11 @@ nav ul li .navgreen:hover {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 576px) {
     .gridContainer {
         display: grid;
         grid-template-columns: repeat(5, 40px);
-        grid-template-rows: repeat(18, 40px);
+        grid-template-rows: repeat(17, 40px);
         width: 80%;
         background-color: white;
         justify-content: center;
