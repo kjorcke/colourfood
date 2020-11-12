@@ -115,42 +115,48 @@ nav ul li a {
     font-weight: bold;
     font-size: 14px;
 }
-nav ul li .navyellow:hover {
+nav ul li .navyellow:hover,
+nav ul li .navyellow.page {
     background-color: #ff9505ff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
 }
-nav ul li .navpurple:hover {
+nav ul li .navpurple:hover ,
+nav ul li .navpurple.page{
     background-color:#643a71ff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
 }
-nav ul li .navbrown:hover {
+nav ul li .navbrown:hover,
+nav ul li .navbrown.page {
     background-color:#895737ff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
 }
-nav ul li .navred:hover {
+nav ul li .navred:hover ,
+nav ul li .navred.page {
     background-color:#ef798aff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
 }
-nav ul li .navwhite:hover {
+nav ul li .navwhite:hover,
+nav ul li .navwhite.page {
     background-color: #f4f1deff;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
 }
-nav ul li .navgreen:hover {
+nav ul li .navgreen:hover,
+nav ul li .navgreen.page {
     background-color:#1c7c54ff;
     text-decoration: none;
     letter-spacing: 3px;

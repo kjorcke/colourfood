@@ -102,20 +102,26 @@ h1 {
   color: black;
 }
 
+
 .recipedescription {
   position: absolute;
   text-align: left;
-  width: 50%;
+  width: 72%;
   top: 75%;
   left: 10%;
-  font-size: 1em;
+
   /*opacity: 0;*/
   background-color: white;
   /* text-decoration: underline; */
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: large;
 }
 
+.recipedescription p{
+  font-weight: bold;
+  font-size: 15px;
+
+}
 .pinterest {
   position: absolute;
   opacity: 0;
@@ -144,15 +150,34 @@ h1 {
 }
 
 
-@media only screen and (max-width: 767px) and (min-width: 540px) {
+
+@media only screen and (max-width: 1500px) and (min-width: 900px) {
   .masonry {
     column-count: 2;
+  
   }
+
+  .recipedescription  {
+    width: 50%;
+  }
+
+  .recipedescription p {
+  font-size: 13px;
+
+}
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 900px) {
   .masonry {
     column-count: 1;
+  
+  }
+  .recipedescription  {
+    width: 50%;
+  }
+
+  .recipedescription p {
+    font-size: 15px;
+
   }
 }
-
