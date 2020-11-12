@@ -98,6 +98,10 @@ h1 {
   position: relative;
 }
 
+.recipeLink{
+  color: black;
+}
+
 .recipedescription {
   position: absolute;
   text-align: left;
